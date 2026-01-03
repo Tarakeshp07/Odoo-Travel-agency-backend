@@ -1,6 +1,8 @@
 import * as authService from "../services/auth.service.js";
 
 export const signup = async (req, res) => {
+  console.log("Signup request body:", req.body);
+  console.log("Signup request headers:", req.headers);
   try {
     const user = await authService.signup(req.body);
     res.status(201).json({

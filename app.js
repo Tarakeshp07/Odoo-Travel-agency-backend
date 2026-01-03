@@ -1,11 +1,11 @@
 import express from "express";
-import authRoutes from "./Routes/auth.routes.js";
-import tripRoutes from "./Routes/trip.routes.js";
-import itineraryRoutes from "./Routes/itinerary.routes.js";
-import cityRoutes from "./Routes/city.routes.js";
-import activityRoutes from "./Routes/activity.routes.js";
-import bugetRoutes  from "./Routes/budget.routes.js";
-import shareRoutes from "./Routes/share.routes.js";
+import authRoutes from "./routes/auth.routes.js";
+import tripRoutes from "./routes/trip.routes.js";
+import itineraryRoutes from "./routes/itinerary.routes.js";
+import cityRoutes from "./routes/city.routes.js";
+import activityRoutes from "./routes/activity.routes.js";
+import bugetRoutes  from "./routes/budget.routes.js";
+import shareRoutes from "./routes/share.routes.js";
 
 const app = express();
 
