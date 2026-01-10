@@ -11,6 +11,12 @@ const app = express();
 
 app.use(express.json());
 
+// Normalize URLs to prevent "Cannot POST //path" errors
+app.use((req, res, next) => {
+  req.url = req.url.replace(/\/+/g, "/");
+  next();
+});
+
 app.use("/api/auth", authRoutes);
 app.use("/api/trips", tripRoutes);
 app.use("/api/itineraries", itineraryRoutes);
